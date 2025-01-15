@@ -11,7 +11,7 @@ const Welcome = ({ name, isMember }) => {
 function App() {
   return (
     <>
-      <Welcome name={"Kevin"} isMember={false}></Welcome>
+      <Welcome name={"Kevin"} isMember={true}></Welcome>
     </>
   );
 }
