@@ -1,6 +1,6 @@
 import "./ContactItem.css";
 
-export default function ContactItem({ contact, onDeleteContact }) {
+const ContactItem = ({ contact, onDeleteContact }) => {
   return (
     <div className="ContactItem">
       <div className="name">{contact.name}</div>
@@ -8,4 +8,6 @@ export default function ContactItem({ contact, onDeleteContact }) {
       <button onClick={() => onDeleteContact(contact.id)}>🗑️ Remove</button>
     </div>
   );
-}
+};
+
+export default ContactItem;

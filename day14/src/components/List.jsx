@@ -23,6 +23,7 @@ const List = ({ todos, onUpdate, onDelete }) => {
   return (
     <div className="List">
       <h4>Todo List 🤪</h4>
+
       <input
         value={search}
         onChange={onChangeSearch}

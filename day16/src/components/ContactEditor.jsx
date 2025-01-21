@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./ContactEditor.css";
 
-export default function ContactEditor({ onAddContact }) {
+const ContactEditor = ({ onAddContact }) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -46,4 +46,6 @@ export default function ContactEditor({ onAddContact }) {
       <button onClick={handleSubmit}>Add</button>
     </div>
   );
-}
+};
+
+export default ContactEditor;
