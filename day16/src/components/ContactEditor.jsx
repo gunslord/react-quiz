@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { memo, useState } from "react";
 import "./ContactEditor.css";
 
 const ContactEditor = ({ onAddContact }) => {
@@ -48,4 +48,4 @@ const ContactEditor = ({ onAddContact }) => {
   );
 };
 
-export default ContactEditor;
+export default memo(ContactEditor);
